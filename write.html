@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRP Site</title>
+    <link rel="stylesheet" href="assets/css/css.css">
+</head>
+<body>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>영화게시판</strong>
+            <p>영화를 자유롭게 토론하는 곳입니다.(스포금지)</p>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <form action="register.php" method="POST">
+                    <div class="title">
+                        <dl>
+                            <dt>제목</dt>
+                            <dd><input type="text" name="title" placeholder="제목 입력"></dd>
+                        </dl>
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>글쓴이</dt>
+                            <dd><input type="text" name="writer" placeholder="글쓴이 입력"></dd>
+                        </dl>
+                        <dl>
+                            <dt>비밀번호</dt>
+                            <dd><input type="password" name="password" placeholder="비밀번호 입력"></dd>
+                        </dl>
+                    </div>
+                    <div class="cont">
+                        <textarea name="content" placeholder="내용 입력"></textarea>
+                    </div>
+                    <div class="bt_wrap">
+                        <button type="submit">등록</button>
+                        <a href="mainpage.php">취소</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

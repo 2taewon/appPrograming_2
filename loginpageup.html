@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link href="style.css" rel="stylesheet">
+  <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    .links {
+    list-style-type: none;
+  }
+  .links li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    transition: 0.2s linear;
+  }
+  .links li {
+    opacity: 0.6;
+  }
+  .links li:hover {
+    opacity: 1;
+  }
+  .links li:nth-child(2) {
+    opacity: 1;
+  }
+  .links li:nth-child(3) {
+    opacity: 0.6;
+    float: right;
+  }
+  .links li:nth-child(3):hover {
+    opacity: 1;
+  }
+  .links li a {
+    text-decoration: none;
+    color: #0f132a;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+  }
+  </style>
+<body>
+<div class="container">
+  <!-- Heading -->
+  <h1>MRP</h1>
+  
+  <!-- Links -->
+  <ul class="links">
+    <li>
+      <a href="loginpagein.html" id="signin">로그인</a>
+    </li>
+    <li>
+      <a href="loginpageup.html" id="signup">회원가입</a>
+    </li>
+    <li>
+      <a href="#" id="reset">RESET</a>
+    </li>
+  </ul>
+  
+  <!-- Form -->
+  <form  action="memberWrite.php" method="post" enctype="multipart/form-data">
+    <!-- email input -->
+    <div class="first-input input__block signup-input__block">
+       <input type="email" placeholder="이메일" class="input" name="email" id="email"   />
+    </div>
+    <!-- password input -->
+    <div class="input__block">
+       <input type="password" placeholder="비밀번호" class="input" name="password" id="password"    />
+    </div>
+    <!-- repeat password input -->
+    <div class="input__block">
+       <input type="nickname" placeholder="닉네임" class="input" name="nickname" id="nickname"    />
+    </div>
+    <!-- sign in button -->
+    <button type ="submit" class="signin__btn">
+      회원가입
+    </button>
+  </form>
+</body>
+</html>
